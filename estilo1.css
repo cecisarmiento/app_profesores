@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+/* ELEMENTOS COMUNES */
+body{
+	overflow-x: hidden;
+}
+html{
+	font-size: 62.5%;
+}
+
+.navbar {
+	display: flex;
+	/*overflow: hidden;  */
+	background-color: #EFF48E;
+	top: 0; /* Position the navbar at the top of the page */
+  	width: 100%;
+  	height: 40 px; 
+	justify-content: space-between;
+}
+.navbar a {
+	color: #3E978B;
+	text-decoration: none;
+	
+  }
+.navBotones {
+	display: flex;
+	justify-content:flex-end;
+}
+.estiloLista {
+	display: flex;
+	justify-content: space-between;
+	font-size: 2rem;
+	margin-top: 1 rem;
+	align-items:center;
+	}
+
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+  }
+  
+.logo {
+	display: flex;
+	padding: 8px;
+	justify-content:flex-start;
+	/* margin-right: 20px; */
+}
+#logoVerde{
+	background-color: #D2E603;
+	border-radius: 100px;
+}
+.logoLink {
+	height: 100%;
+	
+}
+.logo a:hover {
+	background:#EFF48E ;
+  }
+.estiloLista li {
+	list-style-type: none;
+	font-size: 1.75rem;
+   font-family: Merriweather;
+   font-weight: 200;
+   margin-left: 1 rem;
+   margin-right: 1rem;
+  
+}
+ul {
+   list-style: none; /* truco por el uso de inline-block*/
+}
+
+.btn {
+   font-size: 1.75rem;
+   margin: 5px 5px 5px 5px;
+   /*top: 1 rem;   */
+   /* left: 2 rem; */
+   border-radius: 6px;
+   padding: 8px ;
+   font-family: Merriweather;
+   font-weight: 200;
+   margin-right: 1rem;
+   margin-left: 1 rem;
+}
+/* INICIO */
+.main__titulos{ 
+	margin-left: 20px;
+	
+}
+.main__titulos h1{ 
+	font-size: 500%;  /*modifica tamaño tipografico */
+	font-weight:bold; 
+	color:#D2E603;
+}
+.main__titulos h2 { 
+	font-size: 300%;
+	font-weight:normal;   /*modifica tamaño tipografico */
+
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Merriweather;/* modifica familia tipografica*/ 
+	text-align: left;
+}
+.principal {
+	background-image: url("https://img.freepik.com/foto-gratis/clase-ensenanza-profesor-yoga_23-2148925740.jpg?size=626&ext=jpg") ;
+	height: 500px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.sectionSecond { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url("./images/personal.jpg");
+	/* Set a specific height */
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: flex-end;
+
+}
+
+.bttnSection{
+font-size: 1.75rem;
+   margin: 20px 20px 5px 20px;
+   /*top: 1 rem;   */
+   /* left: 2 rem; */
+   border-radius: 6px;
+   padding: 8px ;
+   font-family: Merriweather;
+   font-weight: 200;
+   margin-right: 1rem;
+   margin-left: 1 rem;
+}
+
+.sectionSecond__titulos{
+
+	margin-left: 20px;
+  }
+.sectionSecond__titulos h2{
+	font-size:300%;
+  }
+
+.sectionSecond__titulos h3{
+	font-size:200%;
+  }
+  /* estilos clase 5 */
+
+.sectionEvento {
+	background-color: #3E978B ;
+	height: 500px; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+.sectionEvento__titulos {
+	margin-left: 20px; 
+}
+.sectionEvento__titulos h2 {
+	font-size:300%; 
+}
+.sectionEvento__titulos h3{
+	font-size:200%;	
+}
+.parametroPosition{width: 100%; height: 100%;}
+ .sizeBody {
+	font-size: 1.5rem;
+	font-family: Merriweather;
+   font-weight: normal;
+
+}
+.footerBackground {
+	background-color: #EFF48E;
+	position: relative;	
+	left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+	height: 100px;
+	display: flex;
+    flex-direction: column; 
+	justify-content: center;
+	
+}
+.footerBackground p {
+	font-size: 150%;
+
+}
+h3 {
+	font-weight: normal;
+}
+.footer__iconos{
+	display: inline-block;
+
+}
+footer a {
+	color: #2EC1AC;
+}
+.iconFooter {
+	font-size: 300%;
+}
+
+/* seccion clases */
+.principalClases{
+	background-color: #2EC1AC;
+	height: 100VH; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.principalClases ul {
+	font-size: 300%;
+	font-family: Merriweather;
+   font-weight: normal;
+}
+
+.principalClases ol {
+	font-size: 200%;
+	font-family: Merriweather;
+   font-weight: normal;
+}
+.footerBackground1 {
+	background-color: #EFF48E;
+	position: relative;	
+	left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+	height: 100px;
+	display: flex;
+    flex-direction: column; 
+	justify-content: center;
+	margin-top: 0px;
+}
+/* section eventos */
+.principalEventos {
+	background-color: #3E978B;
+	height: 100VH; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items:stretch;
+	justify-content: center;
+}
+
+.principalEventos__titulos {
+	margin-left: 20px;  
+}
+.principalEventos__titulos h2 {
+	font-size:300%;
+}
+.principalEventos__titulos h3 {
+	font-size:200%;
+}
+.principalEventos__titulos ul {
+	font-size:150%;
+}
+.principalEventos__titulos span {
+	font-size:200%;
+	font-weight: bold;
+}
+
+/* ARANCELES */
+.cajaTabla {
+	border: #D2E603;
+	border-radius: 6px;
+	border-width: medium;
+	width: 50%;
+	height: 300%;
+	position: relative;
+	border-style: double;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: space-evenly;
+}
+.principalAranceles{
+	background-color: #2EC1AC;
+	height: 100VH; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+}
+.cajaTabla h2{
+	font-size:300%;
+	
+}
+.cajaTabla h3{
+	font-size:200%;
+	font-weight: bolder;
+}
+.cajaTabla p{
+	font-size:150%;
+	font-family: Merriweather;
+}
+.aranceles__div {
+	position: relative;
+	margin: 20px;
+	display: flex;
+	justify-content:space-between ;
+}
+.principalAranceles h2{
+	margin-top: 20px;
+	font-size:300%;
+	margin-left: 20px;
+}
+.principalAranceles p {
+	font-size:150%;
+	font-family: Merriweather;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+/* NOSOTROS SECCION */
+.principalNosotros{
+	background-color: #2EC1AC;
+	height: 100VH; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.nosotros__div {
+
+	position: relative;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content:space-between ;
+}
+.nosotros__div h2{
+	font-size:300%;
+}
+.nosotros__div p{
+	font-size:150%;
+	font-family: Merriweather;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.nosotros__div legend{
+	font-size:150%;
+	font-family: Merriweather;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.nosotros__div iframe {
+	margin-bottom: 32px;
+	margin-top: 32px;
+}
+.nosotros__div form {
+	margin-bottom: 32px;
+	margin-top: 32px;
+	height: 200%;
+	
+}
+.nosotros__div__form--labels {
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font-size:150%;
+	font-family: Merriweather;
+	
+}
+#fieldsetNosotros{
+	margin-bottom: 20px;
+	margin-left: 20 px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	border-radius:  6px;
+	border-color: #D2E603;
+
+}
