@@ -12,29 +12,48 @@
     <link rel="stylesheet" href="estilo1.css">
 </head>
 <body> <!-- holaaa -->
-    <header>
-        <nav class="navbar">
+    <header class="header">
+        <div class="header__contenedor">
             <div class="logo">
                 <img src="./images/logo.svg" alt="logo sitio">
             </div>
-            <ul class="estiloLista">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/evento.html">Organiza tu evento gratis</a></li>
-                <li><a href="pages/clase.html">Organiza tu clase gratis</a></li>
-                <li><a href="pages/nosotros.html">Quiénes somos</a></li>
-                <li><a href="pages/aranceles.html">Aranceles</a></li>
-             <div class="navBotones">
-                <button class="btn">Ingresar</button>
-                <button class="btn">Crear cuenta</button>
-            </div>
-            </ul>
-        </nav>    
+            <nav class="navbar">
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
+                    <li class="nav__item">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pages/evento.html">Organiza tu evento gratis</a>
+                    </li>
+                    <li class="nav__item"> 
+                        <a href="pages/clase.html">Organiza tu clase gratis</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pages/nosotros.html">Quiénes somos</a></li>
+                    <li>
+                        <a href="pages/aranceles.html">Aranceles</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace btn-close-sidebar" href="#">❌</a>
+                    </li>
+                </ul>
+                <div class="navBotones">
+                        <button class="btn">Ingresar</button>
+                        <button class="btn">Crear cuenta</button>
+                </div>
+                
+            </nav> 
+        </div>  
     </header>
     <main>
         <section class="principal" >
-            <div class="main__titulos">
+            <div class="principal__titulos">
                 <h1> Enfócate en tus clases y eventos, mientras Simplapp las organiza!</h1>
                 <h2> Simplapp, la app que te ayuda a organizarte de la forma más simple </h2>
+            <div class="principal__imagen">
+                <img src="https://img.freepik.com/foto-gratis/clase-ensenanza-profesor-yoga_23-2148925740.jpg?size=626&ext=jpg" alt="Producto Estrella">
+            </div>
             <div>
                 <button class="bttnSection" >Crear cuenta</button>
             </div>

@@ -9,44 +9,65 @@ body{
 html{
 	font-size: 62.5%;
 }
-
+.header {
+    height: 100px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    padding: 1rem;
+    position: relative;
+	background-color: #EFF48E;
+}
+.header__contenedor {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;	
+}
 .navbar {
 	display: flex;
-	/*overflow: hidden;  */
-	background-color: #EFF48E;
-	top: 0; /* Position the navbar at the top of the page */
-  	width: 100%;
-  	height: 40 px; 
-	justify-content: space-between;
+	justify-content: flex-end;
+	
+
 }
-.navbar a {
+
+.nav__lista a {
 	color: #3E978B;
 	text-decoration: none;
 	
-  }
+}
 .navBotones {
 	display: flex;
-	justify-content:flex-end;
+	
 }
-.estiloLista {
+.nav__lista {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	font-size: 2rem;
 	margin-top: 1 rem;
 	align-items:center;
-	}
-
-.navbar a:hover {
+}
+.nav__item {
+		margin-left: 1rem;
+}
+	
+.nav__lista a:hover {
 	background: #ddd;
 	color: black;
   }
   
 .logo {
 	display: flex;
-	padding: 8px;
-	justify-content:flex-start;
-	/* margin-right: 20px; */
+	padding: 20px;
+	height: 50px;
+    width: 50px;
+	justify-content: flex-start;
 }
+.logo img {
+	height: 100%;
+	width: 100%;
+}
+
 #logoVerde{
 	background-color: #D2E603;
 	border-radius: 100px;
@@ -58,7 +79,7 @@ html{
 .logo a:hover {
 	background:#EFF48E ;
   }
-.estiloLista li {
+.nav__lista li {
 	list-style-type: none;
 	font-size: 1.75rem;
    font-family: Merriweather;
@@ -83,17 +104,40 @@ ul {
    margin-right: 1rem;
    margin-left: 1 rem;
 }
+
+/* Menu Lateral */
+
+.btn-open-sidebar {
+    display: none;
+}
+
+.nav__item--oculto {
+    display: none;
+}
+
+/* Fin Menu lateral */
+
 /* INICIO */
-.main__titulos{ 
+.principal {
+/* 	background-image: url("https://img.freepik.com/foto-gratis/clase-ensenanza-profesor-yoga_23-2148925740.jpg?size=626&ext=jpg") ;
+ */	height: 500px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.principal__titulos{ 
 	margin-left: 20px;
 	
 }
-.main__titulos h1{ 
+.principal__titulos h1{ 
 	font-size: 500%;  /*modifica tamaño tipografico */
 	font-weight:bold; 
 	color:#D2E603;
 }
-.main__titulos h2 { 
+.principal__titulos h2 { 
 	font-size: 300%;
 	font-weight:normal;   /*modifica tamaño tipografico */
 
@@ -102,16 +146,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Merriweather;/* modifica familia tipografica*/ 
 	text-align: left;
 }
-.principal {
-	background-image: url("https://img.freepik.com/foto-gratis/clase-ensenanza-profesor-yoga_23-2148925740.jpg?size=626&ext=jpg") ;
-	height: 500px; 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.principal__imagen {
+    display: flex;
+    justify-content: center;
 }
+
 .sectionSecond { 
 	display: flex;
 	flex-direction: column;
@@ -397,4 +436,115 @@ footer a {
 	border-radius:  6px;
 	border-color: #D2E603;
 
+}
+/* Media Querys */
+/* Es importante que las medias esten al final de archivo CSS */
+/* Que las medias hay que tener un orden especifico */
+/* Aca trabajamos pensando en Desktop First */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .header {
+        height: auto;
+    }
+        
+    .header__contenedor {
+        flex-direction: column;
+    }
+
+    .principal__titulos {
+        flex-direction: column;
+    }
+
+    .principal__left, .principal__right {
+        width: 100%;
+    }
+
+    .rewards__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px;
+    }
+}
+
+/* Movil */
+@media screen and (max-width: 600px) {
+    .nav__lista {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hero__thumbs {
+        display: none;
+    }
+
+    .principal__titulos h1 {
+        font-size: 48px;
+    }
+
+    .principal__titulos h2 {
+        font-size: 32px;
+    }
+
+    .principal__titulos {
+        text-align: center;
+    }
+
+    .hero__right img {
+        max-width: 200px;
+    }
+
+    /* Menu lateral */
+    .btn-open-sidebar {
+        display: inline-block;
+        background-color: #3E978B;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: #fff;
+    }
+
+    .nav__lista {
+        background-color: rgb(224 224 224);
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        transition: transform 0.5s;
+        z-index: 100;
+    }
+
+    #sidebar:target {
+        transform: translateX(0);
+    }
+
+    .nav__item--oculto {
+        display: block;
+    }
+
+    .header__contenedor {
+        flex-direction: row;
+    }
+
+    /* Fin Menu lateral */
+
+    .rewards__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+
+    .app {
+        flex-direction: column;
+    }
+
+    .app__ladoA, .app__ladoB {
+        width: 100%;
+        height: 400px;
+        min-height: auto;
+    }
 }
