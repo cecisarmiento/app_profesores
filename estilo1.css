@@ -15,6 +15,7 @@ html{
     padding: 1rem;
     position: relative;
 	background-color: #EFF48E;
+	width: 100%;
 }
 .header__contenedor {
     max-width: 100%;
@@ -22,7 +23,8 @@ html{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;	
+    align-items: center;
+	width: 100%;	
 }
 .navbar {
 	display: flex;
@@ -120,13 +122,18 @@ ul {
 /* INICIO */
 .principal {
 /* 	background-image: url("https://img.freepik.com/foto-gratis/clase-ensenanza-profesor-yoga_23-2148925740.jpg?size=626&ext=jpg") ;
- */	height: 500px; 
-	background-position: center;
+ */
+	/* background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	max-width: 1200px;
+    background-repeat: no-repeat; */
+    margin: 0 auto;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 .principal__titulos{ 
 	margin-left: 20px;
@@ -149,6 +156,8 @@ h1, h2, h3, h4, h5, h6 {
 .principal__imagen {
     display: flex;
     justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
 .sectionSecond { 
@@ -489,9 +498,12 @@ footer a {
         text-align: center;
     }
 
-    .hero__right img {
+    .principal__imagen img {
         max-width: 200px;
     }
+	.principal{
+		flex-wrap: wrap
+	}
 
     /* Menu lateral */
     .btn-open-sidebar {
@@ -500,11 +512,12 @@ footer a {
         border-radius: 5px;
         padding: 0.5rem 1rem;
         color: #fff;
+		font-size: 300%;
     }
 
     .nav__lista {
         background-color: rgb(224 224 224);
-        width: 80%;
+        width: 100%;
         max-width: 400px;
         height: 100vh;
         position: fixed;
@@ -529,6 +542,7 @@ footer a {
 
     .header__contenedor {
         flex-direction: row;
+		justify-content: space-between;
     }
 
     /* Fin Menu lateral */
