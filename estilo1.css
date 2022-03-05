@@ -43,15 +43,20 @@ html{
 	font-size: 2rem;
 	margin-top: 1 rem;
 	align-items:center;
+	text-decoration: none;
 }
 .nav__item {
 		margin-left: 1rem;
+		text-decoration: none;
+
 }
 	
 .nav__lista a:hover {
 	background: #ddd;
 	color: black;
 	border-radius: 6px;
+	text-decoration: none;
+	
   }
   
 .logo {
@@ -79,11 +84,13 @@ html{
   }
 .nav__lista li {
 	list-style-type: none;
-	font-size: 1.75rem;
+	font-size: 2,5rem;
    font-family: Merriweather;
    font-weight: 200;
    margin-left: 1 rem;
    margin-right: 1rem;
+   text-decoration: none;
+
   
 }
 ul {
@@ -91,7 +98,7 @@ ul {
 }
 
 .btn {
-   font-size: 1.75rem;
+   font-size: 2rem;
    margin: 5px 5px 5px 5px;
    /*top: 1 rem;   */
    /* left: 2 rem; */
@@ -148,7 +155,7 @@ ul {
 }
 
 .footerBackground p {
-	font-size: 150%;
+	font-size: 3rem;
 
 }
 h3 {
@@ -169,19 +176,17 @@ main {
 }
 /* INICIO */
 .principal {
-/* 	background-image: url("https://img.freepik.com/foto-gratis/clase-ensenanza-profesor-yoga_23-2148925740.jpg?size=626&ext=jpg") ;
- */
-	/* background-position: center;
+	background-image: url(./images/fondo1.svg) ;
+	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover; */
+	background-size: cover; 
 	display: flex;
-	max-width: 1200px;
-    /* background-repeat: no-repeat;  */
+	/* max-width: 1400px; */
     margin: 0 auto; 
     justify-content: space-between;
     align-items: center;
     position: relative;
-	padding: 100px 1rem;
+	padding: 1rem 1rem;
 	min-height: 70vh;
 	width: 100%;
 }
@@ -203,6 +208,7 @@ main {
 h1, h2, h3, h4, h5, h6 {
 	font-family: Merriweather;/* modifica familia tipografica*/ 
 	text-align: left;
+	font-weight: 700;
 }
 .principal__imagen {
     display: flex;
@@ -238,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bttnSection{
-font-size: 1.75rem;
+font-size: 2rem;
    margin: 20px 20px 5px 20px;
    /*top: 1 rem;   */
    /* left: 2 rem; */
@@ -292,15 +298,19 @@ font-size: 1.75rem;
 }
 .sectionEvento__titulos h2 {
 	font-size:300%; 
+	margin-bottom: 20px;
 }
 .sectionEvento__titulos h3{
 	font-size:200%;	
+	margin-bottom: 20px
 }
 .parametroPosition{width: 100%; height: 100%;}
  .sizeBody {
-	font-size: 1.5rem;
-	font-family: Merriweather;
-   font-weight: normal;
+	font-size: 2rem;
+	font-family: Merriweather,sans-serif;
+   font-weight: 200;
+   margin-top: 8px;
+   margin-bottom: 8px;
 
 }
 
@@ -319,8 +329,8 @@ font-size: 1.75rem;
 }
 .principalClases ul {
 	font-size: 300%;
-	font-family: Merriweather;
-   font-weight: normal;
+	font-family: Merriweather; 
+   font-weight: 300;
 }
 
 .principalClases ol {
@@ -386,7 +396,7 @@ font-size: 1.75rem;
 	flex-direction: column;
 	align-items:center;
 	justify-content: space-between; 
-	
+	width: 500px;
 }
 .principalAranceles{
 	background-color: #2EC1AC;
@@ -397,7 +407,10 @@ font-size: 1.75rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 100px 1 rem;
+	position: relative;
+	max-width: 100%;
+    margin: 0 auto;
+	padding: 2rem 1rem;
 	
 }
 .cajaTabla h2{
@@ -419,6 +432,7 @@ font-size: 1.75rem;
 	position: relative;
 	gap: 60px;
 	align-content: center;
+	justify-content: center;
 }
 .principalAranceles h2{
 	margin-top: 20px;
@@ -519,15 +533,30 @@ font-size: 1.75rem;
     .div__aranceles__grid {
 		
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 2rem);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+		justify-content: stretch;
+		gap: 8px;
+		max-width: 100%;
+    	margin: 0 auto;
+		
     }
-	.cajaTabla {
-		/* margin: 1rem ; */
+	.principalAranceles{
+		min-height: 140vh;
+		justify-content: flex-start;
+		width: 100%;
+		max-width: 100%;
+    	margin: 0 auto;
 	}
+	.cajaTabla{
+		height: 50%;
+		width: 80%;
+	
+	}
+
 }
 
 /* Movil */
@@ -603,5 +632,6 @@ font-size: 1.75rem;
 .navBotones {
 	display: flex ;
 	flex-direction: column;
+	}
 }
-    /* Fin Menu lateral */
+    /* Fin Menu lateral *

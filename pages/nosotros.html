@@ -12,23 +12,38 @@
     <link rel="stylesheet" href="../estilo1.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo" >
-                <a href="../index.html"><img class="logoLink" id="logoVerde" src="../images/logo.svg" alt="logo sitio"></a>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="logo">
+                <a href="../index.html"><img class="logoLink" src="../images/logo.svg" alt="logo sitio"></a>
             </div>
-            <ul class="estiloLista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="evento.html">Organiza tu evento gratis</a></li>
-                <li><a href="clase.html">Organiza tu clase gratis</a></li>
-                <li><a href="nosotros.html">Quiénes somos</a></li>
-                <li><a href="aranceles.html">Aranceles</a></li>
-             <div class="navBotones">
-                <button class="btn">Ingresar</button>
-                <button class="btn">Crear cuenta</button>
-            </div>
-            </ul>
-        </nav>
+            <nav class="navbar">
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a  class="nav__enlace" href="evento.html">Organiza tu evento gratis</a>
+                    </li>
+                    <li class="nav__item"> 
+                        <a  class="nav__enlace" href="clase.html">Organiza tu clase gratis</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace nav__enlace--activo" href="nosotros.html">Quiénes somos</a></li>
+                    <li class="nav__item">
+                        <a class="nav__enlace " href="aranceles.html">Aranceles</a>
+                    </li>
+                    <li class="navBotones">
+                        <button class="btn">Ingresar</button>
+                        <button class="btn">Crear cuenta</button>
+                    </li>
+                    <li class="nav__item--oculto">
+                        <a class="nav__enlace btn-close-sidebar" href="#">❌</a>
+                    </li>
+                </ul>    
+            </nav> 
+        </div>  
     </header>
     <main class="principalNosotros">
         <section>
@@ -96,16 +111,18 @@
             </div>
         </section>
     </main>
-    <footer class="footerBackground1">
-        <div>
-            <p class="sizeBody">Nuestras redes sociales</p> 
-        </div>
-        <div class="footer__iconos">
-            <a  target="blank_"  href="https://twitter.com/"><i  class="fab fa-twitter iconFooter"></i></a>
-            <a target="blank_" href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram iconFooter"></i></a>
-            <a target="blank_" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp iconFooter"></i></a> 
-        </div>
-        <div class=""><p class="sizeBody">Copyright 2022</p>
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div>
+                <p class="sizeBody">Nuestras redes sociales:</p> 
+            </div>
+            <div class="footer__iconos">
+                <a  target="blank_"  href="https://twitter.com/"><i  class="fab fa-twitter iconFooter"></i></a>
+                <a target="blank_" href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram iconFooter"></i></a>
+                <a target="blank_" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp iconFooter"></i></a> 
+            </div>
+            <div class=""><p class="sizeBody">Copyright 2022</p>
+            </div>
         </div>
     </footer> 
 </body>
