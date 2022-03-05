@@ -33,11 +33,6 @@ html{
 
 }
 
-.nav__lista a {
-	color: #3E978B;
-	text-decoration: none;
-	
-}
 .navBotones {
 	display: flex;
 	
@@ -56,14 +51,13 @@ html{
 .nav__lista a:hover {
 	background: #ddd;
 	color: black;
+	border-radius: 6px;
   }
   
 .logo {
-	display: flex;
 	padding: 20px;
-	height: 50px;
-    width: 50px;
-	justify-content: flex-start;
+	height: 62px;
+    width: 62px;
 }
 .logo img {
 	height: 100%;
@@ -80,6 +74,8 @@ html{
 }
 .logo a:hover {
 	background:#EFF48E ;
+	border-radius: 10px;
+	
   }
 .nav__lista li {
 	list-style-type: none;
@@ -106,7 +102,21 @@ ul {
    margin-right: 1rem;
    margin-left: 1 rem;
 }
-
+.nav__enlace {
+    color: #2EC1AC;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+	font-family: merriweather, sans-serif;
+}
+.nav__enlace--activo {
+    background-color: #2EC1AC;
+    color: #fff;
+    border-radius: 5px;
+	padding: 6px;
+	text-decoration: none;
+}
 /* Menu Lateral */
 
 .btn-open-sidebar {
@@ -118,19 +128,25 @@ ul {
 }
 
 /* Fin Menu lateral */
-.footerBackground {
+.footer {
 	background-color: #EFF48E;
 	position: relative;	
 	left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
 	height: 100px;
-	display: flex;
-    flex-direction: column; 
-	justify-content: center;
-	
+	padding: 2rem 1rem;
 }
+.footer__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .footerBackground p {
 	font-size: 150%;
 
@@ -148,6 +164,9 @@ footer a {
 .iconFooter {
 	font-size: 300%;
 }
+main {
+	min-height: 100vh;
+}
 /* INICIO */
 .principal {
 /* 	background-image: url("https://img.freepik.com/foto-gratis/clase-ensenanza-profesor-yoga_23-2148925740.jpg?size=626&ext=jpg") ;
@@ -158,15 +177,17 @@ footer a {
 	display: flex;
 	max-width: 1200px;
     /* background-repeat: no-repeat;  */
-    margin: 0 auto;
+    margin: 0 auto; 
     justify-content: space-between;
     align-items: center;
     position: relative;
 	padding: 100px 1rem;
-	min-height: 50vh;
+	min-height: 70vh;
+	width: 100%;
 }
 .principal__titulos{ 
 	margin-left: 20px;
+	
 	
 }
 .principal__titulos h1{ 
@@ -188,6 +209,10 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 	width: 100%;
 	height: 100%;
+	max-width: 1200px;
+    /* background-repeat: no-repeat;  */
+    margin: 0 auto;
+	object-fit: cover;
 }
 
 .sectionSecond { 
@@ -196,17 +221,17 @@ h1, h2, h3, h4, h5, h6 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	background-image: url("./images/personal.jpg");
+	background-image: url("./images/scalar2.png");
 	/* Set a specific height */
-	height: 300%;
+	
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	align-items: flex-end;
+	
 	position: relative;
-	/* padding: 100px 1rem; */
-	min-height: 50vh;
-	height: 1fr;
+	padding: 100px 1rem;
+	min-height: 70vh;
+	width: 100%;
 	
 
 
@@ -223,24 +248,27 @@ font-size: 1.75rem;
    font-weight: 200;
    margin-right: 1rem;
    margin-left: 1 rem;
-   display: flex;
+   /* display: flex */;
 }
 
 .sectionSecond__titulos{
-	color: #3E978B;
-
+	color: #EFF48E;
+	padding: 2rem;
+	
+	
 
 	
   }
 .sectionSecond__titulos h2{
-	font-size:300%;
-	
+	font-size:350%;
+	padding: 1rem;
 	margin-bottom: 20 px;
 	margin-right: 20 px;
   }
 
 .sectionSecond__titulos h3{
-	font-size:200%;
+	font-size:250%;
+	padding: 1rem;
   }
   /* estilos clase 5 */
 
@@ -255,6 +283,8 @@ font-size: 1.75rem;
 	align-items: center;
 	justify-content: center;
 	color: #fff;
+	width: 100%;
+	padding: 100px 1rem;
 
 }
 .sectionEvento__titulos {
@@ -349,13 +379,14 @@ font-size: 1.75rem;
 	padding: 1 rem;
 	border-color: #D2E603;
 	height: 100%;
-	width: 400px;
+	width: 100%;
 	border-style: double;
 	margin: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items:center;
 	justify-content: space-between; 
+	
 }
 .principalAranceles{
 	background-color: #2EC1AC;
@@ -365,7 +396,8 @@ font-size: 1.75rem;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-between;
+	padding: 100px 1 rem;
 	
 }
 .cajaTabla h2{
@@ -376,16 +408,17 @@ font-size: 1.75rem;
 	font-size:200%;
 	font-weight: bolder;
 }
-.cajaTabla p{
-	font-size:150%;
-	font-family: Merriweather;
-}
+
 .div__aranceles__grid {
 	max-width:1200px;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 600px;
+	grid-template-rows: 500px;
+	min-height: 100vh;
+	position: relative;
+	gap: 60px;
+	align-content: center;
 }
 .principalAranceles h2{
 	margin-top: 20px;
@@ -394,7 +427,7 @@ font-size: 1.75rem;
 }
 .principalAranceles p {
 	font-size:150%;
-	font-family: Merriweather;
+	font-family: Merriweather, sans-serif;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
@@ -484,9 +517,17 @@ font-size: 1.75rem;
     }
 
     .div__aranceles__grid {
+		
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
     }
+	.cajaTabla {
+		/* margin: 1rem ; */
+	}
 }
 
 /* Movil */
@@ -518,6 +559,7 @@ font-size: 1.75rem;
 	.principal{
 		flex-wrap: wrap
 	}
+	
 
     /* Menu lateral */
     .btn-open-sidebar {
@@ -530,7 +572,7 @@ font-size: 1.75rem;
     }
 
     .nav__lista {
-        background-color: #eff48e;
+        background-color: #eff48e; 
         width: 100%;
         max-width: 400px;
         height: 100vh;
@@ -563,19 +605,3 @@ font-size: 1.75rem;
 	flex-direction: column;
 }
     /* Fin Menu lateral */
-
-    .rewards__grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px 300px 300px 300px;
-    }
-
-    .app {
-        flex-direction: column;
-    }
-
-    .app__ladoA, .app__ladoB {
-        width: 100%;
-        height: 400px;
-        min-height: auto;
-    }
-}
