@@ -582,9 +582,9 @@ font-size: 2rem;
 	align-items: center;
 }
 .principalAranceles h2{
-	margin-top: 20px;
+	margin: 20px;
 	font-size:300%;
-	margin-left: 20px;
+	
 }
 .principalAranceles p {
 	font-size:150%;
@@ -601,6 +601,8 @@ font-size: 2rem;
 	width: 100%;
 	padding: 1rem;
 	position: relative;
+	letter-spacing: 0.1rem;
+	max-width: 100%;
 }
 .principalNosotros{
 	
@@ -611,7 +613,7 @@ font-size: 2rem;
 	justify-content: space-around;
 	position: relative;
 	width: 100%;
-    margin: 0 auto;
+    margin-top: 10%;
 
 }
 .NosotrosForm{
@@ -646,6 +648,7 @@ font-size: 2rem;
 	font-family: Mulish;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	padding: 1rem;
 }
 .nosotros__div legend{
 	font-size:150%;
@@ -705,6 +708,7 @@ font-size: 2rem;
         
     .header__contenedor {
         flex-direction: column;
+		width: 95%;
     }
 
     .principal__titulos {
