@@ -546,7 +546,7 @@ font-size: 2rem;
 }
 .principalAranceles{
 	background-color: #2EC1AC;
-	height: 110VH; 
+	min-height: 100VH; 
 	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
