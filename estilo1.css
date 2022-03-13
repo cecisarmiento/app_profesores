@@ -111,7 +111,7 @@ html{
    font-family: Mulish;
    font-weight: 200;
    margin-left: 1 rem;
-   margin-right: 1rem;
+   /* margin-right: 1rem; */
    text-decoration: none;
 
   
@@ -366,7 +366,8 @@ font-size: 2rem;
 
 /* seccion clases */
 .principalClases{
-	background-color: #2EC1AC;
+	background: rgb(62,151,139);
+	background: linear-gradient(171deg, rgba(62,151,139,1) 0%, rgba(46,193,172,1) 52%, rgba(210,230,3,1) 100%);
 	height: 100VH; 
 	background-position:center;
 	background-repeat: no-repeat;
@@ -593,8 +594,16 @@ font-size: 2rem;
 	margin-left: 20px;
 }
 /* NOSOTROS SECCION */
+.main__nosotros{
+	background: rgb(62,151,139);
+	background: linear-gradient(90deg, rgba(62,151,139,1) 0%, rgba(46,193,172,1) 7%, rgba(239,244,142,1) 100%);
+	margin: 0 auto;
+	width: 100%;
+	padding: 1rem;
+	position: relative;
+}
 .principalNosotros{
-	background-color: #2EC1AC;
+	
 	min-height: 75VH; 
 	background-size: cover;
 	display: flex;
@@ -603,10 +612,10 @@ font-size: 2rem;
 	position: relative;
 	width: 100%;
     margin: 0 auto;
-	padding: 2rem 1rem;
+
 }
 .NosotrosForm{
-	background-color: #2EC1AC;
+	
 	min-height: 100VH; 
 	
 
@@ -649,6 +658,7 @@ font-size: 2rem;
 .nosotros__div iframe {
 	margin-bottom: 32px;
 	margin-top: 32px;
+	
 }
 .nosotros__div form {
 	margin-bottom: 32px;
