@@ -41,7 +41,7 @@ html{
 }
 .nav__lista {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: stretch;
 	font-size: 2rem;
 	margin-top: 1 rem;
 	align-items:center;
@@ -51,6 +51,7 @@ html{
 }
 .nav__item {
 		margin-left: 1rem;
+		margin-right: 1rem;
 		text-decoration: none;
 		position: relative;
 		
@@ -83,13 +84,14 @@ html{
   }
   
 .logo {
-	padding: 20px;
+	
 	height: 62px;
     width: 62px;
 }
 .logo img {
 	height: 100%;
 	width: 100%;
+	box-sizing:unset;
 }
 
 #logoVerde{
@@ -131,7 +133,18 @@ ul {
    font-weight: 500;
    margin-right: 1rem;
    margin-left: 1 rem;
+   background-color:#2EC1AC; 
+   /* border-color:#3E978B */;
+   color: #fff;
+   box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+   border-color:#2EC1AC;
 }
+.btn:hover {
+	color: #fff !important;
+	background-color:#3E978B;
+	border-color: #3E978B;
+	color: #fff;
+  }
 .nav__enlace {
     color: #2EC1AC;
     text-decoration: none;
@@ -142,10 +155,10 @@ ul {
 	font-weight: 500;
 }
 .nav__enlace--activo {
-    background-color: #2EC1AC;
+    background-color: #2ec1ab59;
     color: #fff;
-    border-radius: 5px;
-	padding: 6px;
+    border-radius: 3px;
+	padding: 3px;
 	text-decoration: none;
 }
 /* Menu Lateral */
@@ -167,6 +180,7 @@ ul {
     width: 100%;
 	height: 100px;
 	padding: 2rem 1rem;
+	box-sizing: unset;
 }
 .footer__contenedor {
     max-width: 1200px;
@@ -200,18 +214,19 @@ main {
 }
 /* INICIO */
 .principal {
-	background-image: url(./images/fondo1.svg) ;
+	background-image: url(./images/landing_inicio.svg) ;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover; 
 	display: flex;
 	/* max-width: 1400px; */
     margin: 0 auto; 
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+	align-content:center ;
     position: relative;
 	padding: 1rem 1rem;
-	min-height: 100vh;
+	min-height: 90vh;
 	width: 100%;
 }
 .principal__titulos{ 
@@ -225,7 +240,7 @@ main {
 	font-size: 400%;  /*modifica tamaño tipografico */
 	font-weight:700; 
 	letter-spacing: 0.2rem;
-	color:#D2E603;
+	color:#3E978B;
 	/* text-transform: uppercase; */
 	margin-bottom: 1rem;
 	animation: texth2 2s 1 0.5s;
@@ -270,14 +285,21 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 	object-fit: cover;
 }
-
+.carousel__inicio{
+	background-color: #2ec1ab98;
+	/* position: absolute; */
+	top:50%;
+	min-height: 25vh;
+}
 .sectionSecond { 
 	margin: 0 auto;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row-reverse;
+	
 	justify-content: center;
-	align-items: flex-start;
-	background-image: url("./images/scalar2.png");
+	align-items: flex-end;
+	align-content: center;
+	background-image: url("./images/landing_inicioclases.svg");
 	/* Set a specific height */
 	
 	background-position: center;
@@ -286,13 +308,20 @@ h1, h2, h3, h4, h5, h6 {
 	
 	position: relative;
 	padding: 100px 1rem;
-	min-height: 70vh;
+	min-height: 80vh;
 	width: 100%;
+}
+.index__img--second{
+	width: 75%;
+	height: 75%;
+	position: relative;
+	left: 10%;
 	
 
-
 }
-
+.container__img{
+	position: relative;
+}
 .bttnSection{
 font-size: 2rem;
    margin: 20px 20px 5px 20px;
@@ -308,7 +337,7 @@ font-size: 2rem;
 }
 
 .sectionSecond__titulos{
-	color: #EFF48E;
+	color:#2EC1AC;
 	padding: 2rem;
 	
 	
@@ -327,16 +356,16 @@ font-size: 2rem;
 	padding: 1rem;
   }
 .sectionEvento {
-	background-color: #3E978B ;
-	min-height: 50vh; 
+	background-image: url(./images/landing_iniciofinanzas.svg) ;
+	min-height: 80vh; 
 	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
-	color: #fff;
+	color:#3E978B;
 	width: 100%;
 	margin: 0 auto;
 	padding: 1rem 1rem;
@@ -545,19 +574,27 @@ font-size: 2rem;
 	margin-bottom: 1rem;
 }
 .principalAranceles{
-	background-color: #2EC1AC;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1164%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(46%2c 193%2c 172%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c529.387C103.82%2c537.955%2c208.276%2c516.308%2c299.594%2c466.178C395.041%2c413.782%2c482%2c339.818%2c526.417%2c240.407C570.671%2c141.36%2c577.895%2c24.597%2c542.75%2c-78.036C510.063%2c-173.492%2c406.053%2c-218.411%2c342.476%2c-296.757C275.962%2c-378.722%2c261.952%2c-517.48%2c161.033%2c-548.427C60.292%2c-579.319%2c-26.405%2c-462.614%2c-129.645%2c-441.532C-247.212%2c-417.524%2c-395.368%2c-500.767%2c-481.496%2c-417.219C-565.774%2c-335.465%2c-500.907%2c-190.343%2c-509.321%2c-73.229C-517.009%2c33.78%2c-575.809%2c145.056%2c-528.822%2c241.505C-481.968%2c337.68%2c-363.376%2c368.068%2c-269.416%2c419.219C-182.44%2c466.567%2c-98.693%2c521.242%2c0%2c529.387' fill='%231e7e70'%3e%3c/path%3e%3cpath d='M1440 1084.185C1539.062 1078.249 1568.1680000000001 940.202 1641.066 872.864 1697.7069999999999 820.543 1783.667 801.573 1819.73 733.417 1856.502 663.921 1834.237 581.532 1836.797 502.949 1839.971 405.499 1902.394 288.3 1836.5720000000001 216.36900000000003 1770.231 143.87 1645.867 205.515 1549.076 188.522 1466.788 174.075 1394.761 112.40300000000002 1312.063 124.28500000000003 1224.675 136.841 1153.757 196.137 1087.783 254.80200000000002 1013.829 320.563 904.21 384.632 908.071 483.52 912.087 586.39 1043.393 630.705 1105.661 712.687 1150.766 772.072 1172.943 842.4970000000001 1222.828 897.927 1287.944 970.28 1342.834 1090.008 1440 1084.185' fill='%2368dbcb'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1164'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 	min-height: 100VH; 
 	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	position: relative;
 	max-width: 100%;
     margin: 0 auto;
 	padding: 2rem 1rem;
 	
+}
+.principalAranceles__titulos{
+	margin-bottom:3rem ;
+	color: #fff;
+}
+.card__bold{
+	font-weight: 800;
+	font-size: 3rem;
 }
 .cajaTabla h2{
 	font-size:300%;
