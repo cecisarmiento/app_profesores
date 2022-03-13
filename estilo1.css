@@ -5,6 +5,7 @@
 /* ELEMENTOS COMUNES */
 body{
 	overflow-x: hidden;
+	font-family: Mulish,sans-serif;
 }
 html{
 	font-size: 62.5%;
@@ -30,6 +31,7 @@ html{
 	display: flex;
 	justify-content: flex-end;
 	
+	
 
 }
 
@@ -44,19 +46,40 @@ html{
 	margin-top: 1 rem;
 	align-items:center;
 	text-decoration: none;
+	
+
 }
 .nav__item {
 		margin-left: 1rem;
 		text-decoration: none;
+		position: relative;
+		
 
 }
+/* 	ANIMACIONES NAV */
+.nav__item a::after {
+	content:"";
+	position: absolute;
+	top:100%;
+	width:100%;
+	left:0%;
+	height:3px;
+	background-color: #2EC1AC;
+	transform: scaleX(0);
+	transform-origin:right ;
+	transition: transform 0.5s;
+}
 	
-.nav__lista a:hover {
-	background: #ddd;
-	color: black;
+.nav__item a:hover {
+	/* background:#D2E603; */
+	color: #3E978B;
 	border-radius: 6px;
 	text-decoration: none;
 	
+  }
+.nav__item a:hover::after{
+	  transform: scaleX(1);
+	  transform-origin: left;
   }
   
 .logo {
@@ -85,7 +108,7 @@ html{
 .nav__lista li {
 	list-style-type: none;
 	font-size: 2,5rem;
-   font-family: Merriweather;
+   font-family: Mulish;
    font-weight: 200;
    margin-left: 1 rem;
    margin-right: 1rem;
@@ -104,8 +127,8 @@ ul {
    /* left: 2 rem; */
    border-radius: 6px;
    padding: 8px ;
-   font-family: Merriweather;
-   font-weight: 200;
+   font-family: Mulish;
+   font-weight: 500;
    margin-right: 1rem;
    margin-left: 1 rem;
 }
@@ -115,7 +138,8 @@ ul {
     letter-spacing: 0.1rem;
     padding: 0.5rem 1rem;
     display: inline-block;
-	font-family: merriweather, sans-serif;
+	font-family: Mulish, sans-serif;
+	font-weight: 500;
 }
 .nav__enlace--activo {
     background-color: #2EC1AC;
@@ -187,28 +211,54 @@ main {
     align-items: center;
     position: relative;
 	padding: 1rem 1rem;
-	min-height: 75vh;
+	min-height: 100vh;
 	width: 100%;
 }
 .principal__titulos{ 
 	margin-left: 20px;
+	position: absolute;
+	/* top: 50%; */
 	
 	
 }
-.principal__titulos h1{ 
-	font-size: 500%;  /*modifica tamaño tipografico */
-	font-weight:bold; 
+.h1__default{ 
+	font-size: 400%;  /*modifica tamaño tipografico */
+	font-weight:700; 
+	letter-spacing: 0.2rem;
 	color:#D2E603;
+	/* text-transform: uppercase; */
+	margin-bottom: 1rem;
+	animation: texth2 2s 1 0.5s;
 }
-.principal__titulos h2 { 
-	font-size: 300%;
-	font-weight:normal;   /*modifica tamaño tipografico */
+.h2__default { 
+	font-size: 200%;
+	font-weight:normal; 
+	
+	margin-bottom: 2rem;  /*modifica tamaño tipografico */
 
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: Merriweather;/* modifica familia tipografica*/ 
+	font-family: Mulish;/* modifica familia tipografica*/ 
 	text-align: left;
-	font-weight: 700;
+}
+/* animaciones de títulos */
+@keyframes texth2 {
+	0%{
+		color:#3E978B;
+		margin-bottom: -10px;
+	}
+	30%{
+		letter-spacing: 1rem;
+		margin-bottom: -10px;
+	}
+	85%{
+		letter-spacing:0.5 rem ;
+		margin-bottom: 10px;
+	}
+}
+#h1__bold{
+	font-weight:900;
+	text-transform: uppercase;
 }
 .principal__imagen {
     display: flex;
@@ -250,8 +300,8 @@ font-size: 2rem;
    /* left: 2 rem; */
    border-radius: 6px;
    padding: 8px ;
-   font-family: Merriweather;
-   font-weight: 200;
+   font-family: Mulish;
+   font-weight: 500;
    margin-right: 1rem;
    margin-left: 1 rem;
    /* display: flex */;
@@ -276,8 +326,6 @@ font-size: 2rem;
 	font-size:250%;
 	padding: 1rem;
   }
-  /* estilos clase 5 */
-
 .sectionEvento {
 	background-color: #3E978B ;
 	min-height: 50vh; 
@@ -290,6 +338,8 @@ font-size: 2rem;
 	justify-content: center;
 	color: #fff;
 	width: 100%;
+	margin: 0 auto;
+	padding: 1rem 1rem;
 	
 
 }
@@ -307,13 +357,12 @@ font-size: 2rem;
 .parametroPosition{width: 100%; height: 100%;}
  .sizeBody {
 	font-size: 2rem;
-	font-family: Merriweather,sans-serif;
+	font-family: Mulish,sans-serif;
    font-weight: 200;
    margin-top: 8px;
    margin-bottom: 8px;
 
 }
-
 
 /* seccion clases */
 .principalClases{
@@ -329,13 +378,13 @@ font-size: 2rem;
 }
 .principalClases__lista {
 	font-size: 200%;
-	font-family: Merriweather; 
+	font-family: Mulish; 
    font-weight: normal;
 }
 
 .principalClases ol {
 	font-size: 150%;
-	font-family: Merriweather;
+	font-family: Mulish;
    font-weight: normal;
 }
 .footerBackground1 {
@@ -353,11 +402,11 @@ font-size: 2rem;
 }
 /* section eventos */
 .principalEventos {
-	background-color: #3E978B;
-	min-height: 100VH; 
+	/* background-image: url(./images/Landing-section.png);
+	 
 	background-position:center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
 	display: flex;
 	flex-direction: column;
 	align-items:stretch;
@@ -366,23 +415,114 @@ font-size: 2rem;
 /* 	max-width: 1200px;*/ 
 	margin: 0 auto;
 	width: 100%;
+	min-height: 80VH;
+	
 }
 
 .principalEventos__titulos {
 	margin-left: 20px;  
 }
-.principalEventos__titulos h2 {
+.principalEventos__titulos h1 {
 	font-size:300%;
+	margin-bottom: 1rem;
 }
-.principalEventos__titulos h3 {
-	font-size:200%;
-}
+
 .principalEventos__titulos ul {
 	font-size:150%;
+	margin-bottom: 1rem;
+}
+.principalEventos__titulos ul h2{
+
+	margin-bottom: 1rem;
 }
 .principalEventos__titulos span {
 	font-size:200%;
 	font-weight: bold;
+	
+}
+.articulos{
+	min-height: 100vh;
+	height: 100%;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+
+}
+.finanzas__background{
+	background-image:url(./images/Landing\ 2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+
+}
+.articulos h2 {
+	margin-left: 20px;  
+}
+.grid{
+	
+	display: grid;
+	grid-template-columns: repeat(3,30%);
+	grid-template-rows: repeat(2,45%);
+	gap:2rem;
+	padding: 1rem;
+	margin-left: 2rem;
+
+
+}
+.grid__container{
+	height: 4 rem;
+	width: 100%;
+/* 	border-radius: 6px; */
+/* 	padding: 1rem; */
+}
+.grid__container__img {
+	width:100%;
+	height: 100%;
+	
+}
+.overlay{
+	background-color: #2EC1AC;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+	transform: translate(0%,-100%);
+	transition: 0.5s ease;
+	position:relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.overlay__text{
+	color: #EFF48E;
+	text-align: center;
+	padding: 1rem;
+	margin-bottom: 2rem;
+}
+.overlay h3 {
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.overlay p {
+	font-size: 2rem;
+}
+.grid__container:hover .overlay{
+	opacity: 0.9;
+}
+#button__article{
+	background-color: #2EC1AC;
+	border-color: #EFF48E;
+	color: #EFF48E;
+	border-style: solid ;
+	padding: 5px;
 }
 
 /* ARANCELES */
@@ -447,7 +587,7 @@ font-size: 2rem;
 }
 .principalAranceles p {
 	font-size:150%;
-	font-family: Merriweather, sans-serif;
+	font-family: Mulish, sans-serif;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
@@ -494,13 +634,13 @@ font-size: 2rem;
 }
 .nosotros__div p{
 	font-size:150%;
-	font-family: Merriweather;
+	font-family: Mulish;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 .nosotros__div legend{
 	font-size:150%;
-	font-family: Merriweather;
+	font-family: Mulish;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	font-weight: bold;
@@ -520,7 +660,7 @@ font-size: 2rem;
 	margin-bottom: 8px;
 	margin-top: 8px;
 	font-size:150%;
-	font-family: Merriweather;
+	font-family: Mulish;
 	
 }
 #fieldsetNosotros{
@@ -586,6 +726,12 @@ font-size: 2rem;
 		height: 50%;
 		width: 80%;
 	
+	}
+	.grid{
+		grid-template-columns: repeat(1,1fr);
+		grid-template-rows: repeat(6,75vh);
+		gap:1rem;
+		justify-content: stretch;
 	}
 
 }
@@ -674,6 +820,11 @@ font-size: 2rem;
 	.video__iframe {
 		width: 100%;
 		height: 100%;
+	}
+	.grid{
+		
+		grid-template-rows: repeat(6,50vh);
+		
 	}
 }
    
