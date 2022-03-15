@@ -47,12 +47,14 @@
             </nav> 
         </div>  
     </header>
-    <main class="main__nosotros">
-        <section class="principalNosotros">
+    <main class="main__nosotros ml-3 ml-3">
+        <section class="principalNosotros mt-5">
             <div class="nosotros__div">
-                <h2>Te contamos sobre nosotros</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos similique quos earum modi molestias quam ducimus ratione eaque in odit inventore quis, fugiat corporis numquam non magni error quia.
-                Explicabo fugit illum quas iste, magni quod incidunt officia. Odio tempora laboriosam dolor, itaque provident eos quasi eum reprehenderit soluta ex debitis, harum sunt ut labore blanditiis quam ipsum alias!</p>
+                <div class="nosotros__div__titulos">
+                    <h2>Te contamos sobre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos similique quos earum modi molestias quam ducimus ratione eaque in odit inventore quis, fugiat corporis numquam non magni error quia.
+                    Explicabo fugit illum quas iste, magni quod incidunt officia. Odio tempora laboriosam dolor, itaque provident eos quasi eum reprehenderit soluta ex debitis, harum sunt ut labore blanditiis quam ipsum alias!</p>
+                </div>
                 <!-- video corporativo -->
                 <div class="div__video">
                     <iframe class="video__iframe" width="560" height="315" src="https://www.youtube.com/embed/uTOgpRxjkwA?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -61,54 +63,53 @@
         </section>
         <section class="NosotrosForm">
             <div class="nosotros__div">
-                <h2>Escribinos!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos similique quos earum modi molestias quam ducimus ratione eaque in odit inventore quis, fugiat corporis numquam non magni error quia.
-                 Explicabo fugit illum quas iste, magni quod incidunt officia. Odio tempora laboriosam dolor, itaque provident eos quasi eum reprehenderit soluta ex debitis, harum sunt ut labore blanditiis quam ipsum alias!
+                <div class="nosotros__div__titulos">
+                    <h2>Escribinos!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos similique quos earum modi molestias quam ducimus ratione eaque in odit inventore quis, fugiat corporis numquam non magni error quia.
+                    Explicabo fugit illum quas iste, magni quod incidunt officia. Odio tempora laboriosam dolor, itaque provident eos quasi eum reprehenderit soluta ex debitis, harum sunt ut labore blanditiis quam ipsum alias!
                 </p>
-                <form action="ruta o archivo" method="" enctype="">
+                </div>
+                <form class="card p-2 nosotros__div__form" action="ruta o archivo" method="" enctype="">
                     <fieldset id="fieldsetNosotros">
                         <legend>Formulario de Consultas</legend>
-                        <div class="nosotros__div__form--labels">
-                            <label for="fullname">Nombre Completo:</label>
-                            <input type="text" id="fullname" name="fullname" placeholder="Nombre Completo">
+                        <div class="col-12 nosotros__div__form--labels  mb-3">
+                            <label for="fullname"  class="form-label">Nombre Completo:</label>
+                            <input class="form-control form-control-lg" type="text" id="fullname" name="fullname" placeholder="Nombre Completo">
                         </div>
-                        <div class="nosotros__div__form--labels"> 
-                            <label for="email">Email:</label>
-                            <input type="email"  placeholder="Email">
+                        <div class="col-12 nosotros__div__form--labels  mb-3"> 
+                            <label for="email" class="form-label">Email:</label>
+                            <input class="form-control form-control-lg" type="email"  placeholder="name@example.com">
                         </div>
-                        <div class="nosotros__div__form--labels">
-                            <label for="consulta">Tipo de consulta:</label>
-                            <select name="talle" id="talle">
+                        <div class="col-12 nosotros__div__form--labels  mb-3">
+                            <label for="consulta" class="form-label">Tipo de consulta:</label>
+                            <select class="form-select" name="talle" id="talle">
                                 <option value="duda">Dudas</option>
                                 <option value="reclamo">Realizar un reclamo</option>
                                 <option value="mejora">Sugerir mejoras</option>
                             </select>
                         </div>
-                        <div class="nosotros__div__form--labels">
-                            <label for="">Comentario:</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Tu comentario"></textarea>
+                        <div class="col-12 nosotros__div__form--labels  mb-3">
+                            <label for="comentario" class="form-label">Comentario:</label>
+                            <textarea class="form-control" name="" id=""  rows="10" placeholder="Tu comentario"></textarea>
                         </div>
-                        
-                        <div class="nosotros__div__form--labels">
-                            <label for="promo">Deseo recibir promociones y novedades</label>
-                            <input type="checkbox" name="promociones" id="promo">
-                        </div>
-                
-                        <div class="nosotros__div__form--labels">
-                            <label for="contacto">Deseo recibir el newsletter</label>
-                            <input type="checkbox" name="newsletter" id="contacto">
-                        </div>
-                
-                        <div class="nosotros__div__form--labels">
-                            <label for="aceptar">Terminos y condicionar</label>
-                            <input type="checkbox" name="terminosycondiciones" id="aceptar">
-                        </div> 
+                        <div class="col-12 form-check nosotros__div__form--labels">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Deseo recibir promociones y novedades por newsletter
+                            </label>
+                          </div>
+                          <div class="col-12 form-check nosotros__div__form--labels">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Quiero reciibr más información
+                            </label>
+                          </div> 
 
                         <div>
                             <!-- <input type="submit" value="Enviar"> -->
                             <!-- <input type="reset" value="Limpiar"> -->
-                            <button type="submit" class="btn">Enviar</button>
-                            <button type="reset"class="btn">Limpiar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="reset"class="btn btn-outline-secondary">Limpiar</button>
                         </div>
                     </fieldset>
                 </form>
