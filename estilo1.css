@@ -508,7 +508,7 @@ font-size: 2rem;
 
 }
 /* section finanzas */
-.principalEventos {
+.principalFinanzas{
 	background-image: url(./images/landing_finance.svg);
 	 
 	background-position:center;
@@ -527,27 +527,13 @@ font-size: 2rem;
 }
 
 
-.principalEventos__titulos {
+.principalFinanzas__titulos {
 	margin-left: 20px;  
 }
-.principalEventos__titulos h1 {
-	font-size:300%;
-	margin-bottom: 1rem;
+.principalFinanzas__titulos li {
+	font-size: 2rem;
 }
 
-.principalEventos__titulos ul {
-	font-size:150%;
-	margin-bottom: 1rem;
-}
-.principalEventos__titulos ul h2{
-
-	margin-bottom: 1rem;
-}
-.principalEventos__titulos span {
-	font-size:200%;
-	font-weight: bold;
-	
-}
 .articulos{
 	min-height: 100vh;
 	height: 100%;
@@ -578,9 +564,19 @@ font-size: 2rem;
 	
 	display: grid;
 	grid-template-columns: repeat(3,30%);
-	grid-template-rows: repeat(2,45%);
+	grid-template-rows: repeat(2,40%);
 	gap:2rem;
 	padding: 1rem;
+	justify-content: center;
+	align-content: center;
+
+
+
+
+
+
+
+
 }
 .grid__container{
 	height: 4 rem;
