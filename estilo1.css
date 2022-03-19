@@ -581,9 +581,6 @@ font-size: 2rem;
 	grid-template-rows: repeat(2,45%);
 	gap:2rem;
 	padding: 1rem;
-	margin-left: 2rem;
-
-
 }
 .grid__container{
 	height: 4 rem;
