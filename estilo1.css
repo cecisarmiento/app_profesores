@@ -178,9 +178,9 @@ ul {
 	left: 0;
     bottom: 0;
     width: 100%;
-	height: 100px;
-	padding: 2rem 1rem;
-	box-sizing: unset;
+	height: 100%;
+	padding: 1rem;
+	/* box-sizing: unset; */
 }
 .footer__contenedor {
     max-width: 1200px;
@@ -369,8 +369,6 @@ font-size: 2rem;
 	width: 100%;
 	margin: 0 auto;
 	padding: 1rem 1rem;
-	
-
 }
 .sectionEvento__titulos {
 	margin-left: 20px; 
@@ -405,7 +403,15 @@ font-size: 2rem;
 	align-items: center;
 	justify-content: center;
 }
-.principalClases1{
+.btn--secondary {
+	background-color: #fff !important;
+	color:#2EC1AC !important;
+}
+.subtitle {
+	color: grey;
+	letter-spacing: 0.1rem;
+}
+/* .principalClases1{
 	background-image:url(./images/landing_inicioclases.svg);
 	height: 100VH; 
 	background-position:center;
@@ -415,7 +421,7 @@ font-size: 2rem;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
+} */
 .principalClases__lista {
 	font-size: 200%;
 	font-family: Mulish; 
@@ -440,13 +446,74 @@ font-size: 2rem;
 	justify-content: center;
 	margin-top: 0px;
 }
-/* section eventos */
+.index__img--clases{
+	width: 100%;
+	height: 100%;
+	
+	left: 10%;
+	
+}
+.container__img{
+	width: 100%;
+	height: 100%;
+
+}
+.sectionSecond--clases { 
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-image: url("./images/landing_product1.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 1rem 1rem;
+	min-height: 80vh;
+	width: 100%;
+
+}
+.sectionEvento--clases {
+	background-image: url(./images/landing_product2.svg) ;
+	min-height: 80vh; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: flex-start;
+	color:#3E978B;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	position: relative;
+}
+.clases__img--evento{
+	width: 85%;
+	height: 85%;
+	/* position: absolute; */
+	/* left: 10%; */
+	top: 10%;
+}
+.h1__default--clase{
+	
+	letter-spacing: 0.15rem;
+	
+	/* text-transform: uppercase; */
+	margin-bottom: 1rem;
+	/* animation: texth2 2s 1 0.5s; */
+
+}
+/* section finanzas */
 .principalEventos {
-	/* background-image: url(./images/Landing-section.png);
+	background-image: url(./images/landing_finance.svg);
 	 
 	background-position:center;
 	background-repeat: no-repeat;
-	background-size: cover; */
+	background-size: cover; 
 	display: flex;
 	flex-direction: column;
 	align-items:stretch;
@@ -458,6 +525,7 @@ font-size: 2rem;
 	min-height: 80VH;
 	
 }
+
 
 .principalEventos__titulos {
 	margin-left: 20px;  
@@ -490,13 +558,14 @@ font-size: 2rem;
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
-
-}
-.finanzas__background{
-	background-image:url(./images/Landing\ 2.png);
+	background-image:url(./images/landing_iniciofinanzas.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+}
+.finanzas__background{
+	
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
@@ -769,25 +838,21 @@ font-size: 2rem;
         
     .header__contenedor {
         flex-direction: column;
-		width: 95%;
+		width: 100%;
     }
+	.nav__enlace{
+		padding: 0;
+	}
 
     .principal__titulos {
         flex-direction: column;
     }
 
-    .div__aranceles__grid {
+    .card {
 		
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 2rem);
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		justify-content: stretch;
-		gap: 8px;
-		max-width: 100%;
-    	margin: 0 auto;
+       
+		margin-bottom: 1rem;
+		
 		
     }
 	.principalAranceles{
@@ -807,6 +872,12 @@ font-size: 2rem;
 		grid-template-rows: repeat(6,75vh);
 		gap:1rem;
 		justify-content: stretch;
+	}
+	.sectionEvento--clases{
+		flex-direction: column;
+	}
+	.sectionSecond--clases{
+		flex-direction: column;
 	}
 
 }
@@ -900,6 +971,9 @@ font-size: 2rem;
 		
 		grid-template-rows: repeat(6,50vh);
 		
+	}
+	.nosotros__div__form{
+		width: 100%;
 	}
 }
    
