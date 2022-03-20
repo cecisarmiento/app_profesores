@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,9 @@
     <header class="header">
         <div class="header__contenedor">
             <div class="logo">
-                <a href="../index.html"><img class="logoLink" src="../images/logo.svg" alt="logo sitio"></a>
+                <a class="logoLink ml-2" href="../index.html">
+                    <img class="img-fluid" src="../images/logo.svg" alt="logo sitio">
+                </a>
             </div>
             <nav class="navbar">
                 <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
@@ -26,10 +28,10 @@
                         <a class="nav__enlace" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav__item"> 
-                        <a  class="nav__enlace" href="clase.html">Tus clases</a>
+                        <a  class="nav__enlace" href="clase.html">Mis clases</a>
                     </li>
                     <li class="nav__item">
-                        <a  class="nav__enlace " href="finanzas.html">Tus finanzas</a>
+                        <a  class="nav__enlace " href="finanzas.html">Mi finanza</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__enlace nav__enlace--activo" href="nosotros.html">Quiénes somos</a></li>
@@ -47,11 +49,11 @@
             </nav> 
         </div>  
     </header>
-    <main class="main__nosotros ml-3 ml-3">
+    <main class="main__nosotros">
         <section class="principalNosotros mt-5">
             <div class="nosotros__div">
                 <div class="nosotros__div__titulos">
-                    <h2>Te contamos sobre nosotros</h2>
+                    <h1>Te contamos sobre nosotros</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos similique quos earum modi molestias quam ducimus ratione eaque in odit inventore quis, fugiat corporis numquam non magni error quia.
                     Explicabo fugit illum quas iste, magni quod incidunt officia. Odio tempora laboriosam dolor, itaque provident eos quasi eum reprehenderit soluta ex debitis, harum sunt ut labore blanditiis quam ipsum alias!</p>
                 </div>
@@ -62,57 +64,62 @@
             </div>
         </section>
         <section class="NosotrosForm">
-            <div class="nosotros__div">
-                <div class="nosotros__div__titulos">
-                    <h2>Escribinos!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos similique quos earum modi molestias quam ducimus ratione eaque in odit inventore quis, fugiat corporis numquam non magni error quia.
-                    Explicabo fugit illum quas iste, magni quod incidunt officia. Odio tempora laboriosam dolor, itaque provident eos quasi eum reprehenderit soluta ex debitis, harum sunt ut labore blanditiis quam ipsum alias!
-                </p>
+            <div class="nosotros__div__titulos pl-5">
+                <h2 class="h2__default pl-5 fs-1">¡Escribinos!</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col12 col-md-4">
+                        <p class="mt-5 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos similique quos earum modi molestias quam ducimus ratione eaque in odit inventore quis, fugiat corporis numquam non magni error quia.
+                        Explicabo fugit illum quas iste, magni quod incidunt officia. Odio tempora laboriosam dolor, itaque provident eos quasi eum reprehenderit soluta ex debitis, harum sunt ut labore blanditiis quam ipsum alias!
+                        </p>
+                    </div>
+                    <div class="col12 col-md-8">
+                        <form class="card p-2 nosotros__div--form" action="ruta o archivo" method="" enctype="">
+                            <fieldset id="fieldsetNosotros">
+                                <legend class="fw-bold py-2">Formulario de Consultas</legend>
+                                <div class="col-12 nosotros__div--form--labels py-3  mb-3">
+                                    <label for="fullname"  class="form-label">Nombre Completo:</label>
+                                    <input class="form-control form-control-lg" type="text" id="fullname" name="fullname" placeholder="Nombre Completo">
+                                </div>
+                                <div class="col-12 nosotros__div--form--labels py-3  mb-3"> 
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input class="form-control form-control-lg" type="email"  placeholder="name@example.com">
+                                </div>
+                                <div class="col-12 nosotros__div--form--labels py-3  mb-3">
+                                    <label for="consulta" class="form-label">Tipo de consulta:</label>
+                                    <select class="form-select" name="talle" id="talle">
+                                        <option value="duda">Dudas</option>
+                                        <option value="reclamo">Realizar un reclamo</option>
+                                        <option value="mejora">Sugerir mejoras</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 nosotros__div--form--labels py-3  mb-3">
+                                    <label for="comentario" class="form-label">Comentario:</label>
+                                    <textarea class="form-control mb-3" name="" id=""  rows="10" placeholder="Tu comentario"></textarea>
+                                </div>
+                                <div class="col-12 form-check nosotros__div--form--labels py-3  mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Deseo recibir promociones y novedades por newsletter
+                                    </label>
+                                </div>
+                                <div class="col-12 form-check nosotros__div--form--labels py-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                    Quiero reciibr más información
+                                    </label>
+                                </div> 
+                                <div class="py-3 mb-3">
+                                    <!-- <input type="submit" value="Enviar"> -->
+                                    <!-- <input type="reset" value="Limpiar"> -->
+                                    <button type="reset"class="btn btn--secondary">Limpiar</button>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
-                <form class="card p-2 nosotros__div__form" action="ruta o archivo" method="" enctype="">
-                    <fieldset id="fieldsetNosotros">
-                        <legend>Formulario de Consultas</legend>
-                        <div class="col-12 nosotros__div__form--labels  mb-3">
-                            <label for="fullname"  class="form-label">Nombre Completo:</label>
-                            <input class="form-control form-control-lg" type="text" id="fullname" name="fullname" placeholder="Nombre Completo">
-                        </div>
-                        <div class="col-12 nosotros__div__form--labels  mb-3"> 
-                            <label for="email" class="form-label">Email:</label>
-                            <input class="form-control form-control-lg" type="email"  placeholder="name@example.com">
-                        </div>
-                        <div class="col-12 nosotros__div__form--labels  mb-3">
-                            <label for="consulta" class="form-label">Tipo de consulta:</label>
-                            <select class="form-select" name="talle" id="talle">
-                                <option value="duda">Dudas</option>
-                                <option value="reclamo">Realizar un reclamo</option>
-                                <option value="mejora">Sugerir mejoras</option>
-                            </select>
-                        </div>
-                        <div class="col-12 nosotros__div__form--labels  mb-3">
-                            <label for="comentario" class="form-label">Comentario:</label>
-                            <textarea class="form-control" name="" id=""  rows="10" placeholder="Tu comentario"></textarea>
-                        </div>
-                        <div class="col-12 form-check nosotros__div__form--labels">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                              Deseo recibir promociones y novedades por newsletter
-                            </label>
-                          </div>
-                          <div class="col-12 form-check nosotros__div__form--labels">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                              Quiero reciibr más información
-                            </label>
-                          </div> 
-
-                        <div>
-                            <!-- <input type="submit" value="Enviar"> -->
-                            <!-- <input type="reset" value="Limpiar"> -->
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                            <button type="reset"class="btn btn-outline-secondary">Limpiar</button>
-                        </div>
-                    </fieldset>
-                </form>
             </div>
         </section>
     </main>
