@@ -1,0 +1,104 @@
+/* seccion clases */
+.principalClases{
+	background-image:url(../images/landing_clases.svg);
+	height: 100VH; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	&__lista {
+		font-size: 200%;
+		font-family: Mulish; 
+	   font-weight: normal;
+	}
+	& ol {
+		font-size: 150%;
+		font-family: Mulish;
+	   font-weight: normal;
+	}
+}
+.btn--secondary {
+	background-color: #fff !important;
+	color:$colorPrimary !important;
+}
+.subtitle {
+	color: grey;
+	letter-spacing: 0.1rem;
+}
+/* .principalClases1{
+	background-image:url(./images/landing_inicioclases.svg);
+	height: 100VH; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+} */
+
+
+.index__img--clases{
+	width: 100%;
+	height: 100%;
+	
+	left: 10%;
+	
+}
+.container__img{
+	width: 100%;
+	height: 100%;
+
+}
+.sectionSecond--clases { 
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-image: url("../images/landing_product1.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 1rem 1rem;
+	min-height: 80vh;
+	width: 100%;
+
+}
+.sectionEvento--clases {
+	background-image: url(../images/landing_product2.svg) ;
+	min-height: 80vh; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: flex-start;
+	color:$colorPrimary;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	position: relative;
+}
+.clases__img--evento{
+	width: 85%;
+	height: 85%;
+	/* position: absolute; */
+	/* left: 10%; */
+	top: 10%;
+}
+.h1__default--clase{
+	
+	letter-spacing: 0.15rem;
+	
+	/* text-transform: uppercase; */
+	margin-bottom: 1rem;
+	/* animation: texth2 2s 1 0.5s; */
+
+}

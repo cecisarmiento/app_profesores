@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+/* ELEMENTOS COMUNES */
+body{
+	overflow-x: hidden;
+	font-family: $tipografiaPrincipal;
+}
+html{
+	font-size: 62.5%;
+}
+main {
+	min-height: 100vh;
+}
+
+/* INICIO */
+.principal {
+	background-image: url(../images/landing_inicio.svg) ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	display: flex;
+	/* max-width: 1400px; */
+    margin: 0 auto; 
+    justify-content: center;
+    align-items: center;
+	align-content:center ;
+    position: relative;
+	padding: 1rem 1rem;
+	min-height: 90vh;
+	width: 100%;
+}
+.principal__titulos{ 
+	margin-left: 20px;
+	position: absolute;
+	/* top: 50%; */
+	
+	
+}
+.h1__default{ 
+	font-size: 400%;  /*modifica tamaño tipografico */
+	font-weight:700; 
+	letter-spacing: 0.2rem;
+	color:$colorSecondary;
+	/* text-transform: uppercase; */
+	margin-bottom: 1rem;
+	animation: texth2 2s 1 0.5s;
+}
+.h2__default { 
+	font-size: 200%;
+	font-weight:normal; 
+	
+	margin-bottom: 2rem;  /*modifica tamaño tipografico */
+
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $tipografiaPrincipal;/* modifica familia tipografica*/ 
+	text-align: left;
+}
+/* animaciones de títulos */
+@keyframes texth2 {
+	0%{
+		color:$colorSecondary;
+		margin-bottom: -10px;
+	}
+	30%{
+		letter-spacing: 1rem;
+		margin-bottom: -10px;
+	}
+	85%{
+		letter-spacing:0.5 rem ;
+		margin-bottom: 10px;
+	}
+}
+#h1__bold{
+	font-weight:900;
+	text-transform: uppercase;
+}
+.principal__imagen {
+    display: flex;
+    justify-content: center;
+	width: 100%;
+	height: 100%;
+	max-width: 1200px;
+    /* background-repeat: no-repeat;  */
+    margin: 0 auto;
+	object-fit: cover;
+}
+.carousel__inicio{
+	background-color: $colorPrimary;
+	/* position: absolute; */
+	top:50%;
+	min-height: 25vh;
+}
+.sectionSecond { 
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row-reverse;
+	
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
+	background-image: url("../images/landing_inicioclases.svg");
+	/* Set a specific height */
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	position: relative;
+	padding: 100px 1rem;
+	min-height: 80vh;
+	width: 100%;
+}
+.index__img--second{
+	width: 75%;
+	height: 75%;
+	position: relative;
+	left: 10%;
+	
+
+}
+.container__img{
+	position: relative;
+}
+.bttnSection{
+font-size: 2rem;
+   margin: 20px 20px 5px 20px;
+   /*top: 1 rem;   */
+   /* left: 2 rem; */
+   border-radius: 6px;
+   padding: 8px ;
+   font-family: Mulish;
+   font-weight: 500;
+   margin-right: 1rem;
+   margin-left: 1 rem;
+   /* display: flex */;
+}
+
+.sectionSecond__titulos{
+	color:$colorPrimary;
+	padding: 2rem;
+	
+	
+
+	
+  }
+.sectionSecond__titulos h2{
+	font-size:350%;
+	padding: 1rem;
+	margin-bottom: 20 px;
+	margin-right: 20 px;
+  }
+
+.sectionSecond__titulos h3{
+	font-size:250%;
+	padding: 1rem;
+  }
+.sectionEvento {
+	background-image: url(../images/landing_iniciofinanzas.svg) ;
+	min-height: 80vh; 
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	color:$colorPrimary;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem 1rem;
+}
+.sectionEvento__titulos {
+	margin-left: 20px; 
+}
+.sectionEvento__titulos h2 {
+	font-size:300%; 
+	margin-bottom: 20px;
+}
+.sectionEvento__titulos h3{
+	font-size:200%;	
+	margin-bottom: 20px
+}
+.parametroPosition{width: 100%; height: 100%;}
+ .sizeBody {
+	font-size: 2rem;
+	font-family: $tipografiaPrincipal;
+   font-weight: 200;
+   margin-top: 8px;
+   margin-bottom: 8px;
+
+}

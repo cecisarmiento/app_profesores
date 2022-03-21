@@ -1,0 +1,156 @@
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .header {
+        height: auto;
+    }
+        
+    .header__contenedor {
+        flex-direction: column;
+		width: 100%;
+    }
+	.nav__enlace{
+		padding: 0;
+	}
+
+    .principal__titulos {
+        flex-direction: column;
+    }
+
+    .card {
+		
+		align-items: stretch;
+		margin-bottom: 1rem;
+		
+		
+    }
+	.principalAranceles{
+		min-height: 140vh;
+		justify-content: flex-start;
+		width: 100%;
+		max-width: 100%;
+    	margin: 0 auto;
+	}
+	.cajaTabla{
+		height: 50%;
+		width: 80%;
+	
+	}
+	.grid{
+		grid-template-columns: repeat(1,1fr);
+		grid-template-rows: repeat(6,75vh);
+		gap:1rem;
+		justify-content: stretch;
+	}
+	.sectionEvento--clases{
+		flex-direction: column;
+	}
+	.sectionSecond--clases{
+		flex-direction: column;
+	}
+	.sectionSecond {
+		flex-direction: column;
+	}
+	.div__video{
+		width: 100%;
+	}
+	.NosotrosForm{
+		flex-direction: column;
+	}
+
+}
+
+/* Movil */
+@media screen and (max-width: 600px) {
+    .nav__lista {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hero__thumbs {
+        display: none;
+    }
+
+    .principal__titulos h1 {
+        font-size: 48px;
+    }
+
+    .principal__titulos h2 {
+        font-size: 32px;
+    }
+
+    .principal__titulos {
+        text-align: center;
+    }
+
+    .principal__imagen img {
+        max-width: 200px;
+    }
+	.principal{
+		flex-wrap: wrap
+	}
+	
+
+    /* Menu lateral */
+    .btn-open-sidebar {
+        display: inline-block;
+        background-color: #3E978B;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: #fff;
+		font-size: 300%;
+    }
+
+    .nav__lista {
+        background-color: #eff48e; 
+        width: 100%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        transition: transform 0.5s;
+        z-index: 100;
+    }
+
+    #sidebar:target {
+        transform: translateX(0);
+    }
+
+    .nav__item--oculto {
+        display: block;
+    }
+
+    .header__contenedor {
+        flex-direction: row;
+		justify-content: space-between;
+    }
+	.navBotones {
+		display: flex ;
+		flex-direction: column;
+	}
+	 /* Fin Menu lateral */
+	.div__video{
+		width: 100%;
+		height: 100%;
+		min-height: auto;
+		object-fit: cover;
+	}
+	.video__iframe {
+		width: 100%;
+		height: 100%;
+	}
+	.grid{
+		
+		grid-template-rows: repeat(6,50vh);
+		
+	}
+	.nosotros__div__form{
+		width: 100%;
+	}
+}
+   

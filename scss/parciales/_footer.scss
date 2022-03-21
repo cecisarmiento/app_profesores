@@ -1,0 +1,43 @@
+.footer {
+	background-color: $colorHeader;
+	position: relative;	
+	left: 0;
+    bottom: 0;
+    width: 100%;
+	height: 100%;
+	padding: 1rem;
+	/* box-sizing: unset; */
+    &__contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+        /* background-color: orange; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__iconos{
+        display: inline-block;
+        & a {
+            color: $colorSecondary;
+        }
+    }
+    
+}
+
+.iconFooter {
+	font-size: 300%;
+}
+.footerBackground1 {
+	background-color: #EFF48E;
+	position: relative;	
+	left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+	height: 100px;
+	display: flex;
+    flex-direction: column; 
+	justify-content: center;
+	margin-top: 0px;
+}
