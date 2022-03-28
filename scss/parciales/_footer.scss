@@ -18,16 +18,11 @@
     }
     &__iconos{
         display: inline-block;
-        & a {
-            color: $colorSecondary;
-        }
     }
     
 }
 
-.iconFooter {
-	font-size: 300%;
-}
+
 .footerBackground1 {
 	background-color: #EFF48E;
 	position: relative;	
@@ -41,3 +36,17 @@
 	justify-content: center;
 	margin-top: 0px;
 }
+$icons: ( /*Declaramos nuestro mapa*/
+        twitter: #55acee,
+        whatsapp:  #25D366,
+        instagram: #E1306C
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $icon, $color in $icons {
+   .btn--#{$icon} {
+       color: $color;
+       font-size: 300%;
+       margin-right: 1rem;
+   }
+}
+

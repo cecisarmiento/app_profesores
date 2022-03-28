@@ -2,3 +2,17 @@ $colorPrimary: #2EC1AC;
 $colorSecondary: #3E978B;
 $colorHeader: #EFF48E;
 $colorTerciary: #D2E603;
+$nav_active: #d3e60385;
+$principalSect:(
+    1rem : 1rem,
+    height: 100VH,
+);
+$titles:(
+    padding: 2rem,
+);
+@mixin flex-column-cen{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+    align-items: center;
+}

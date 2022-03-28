@@ -29,7 +29,7 @@
 }
 .nav__lista {
 	display: flex;
-	justify-content: stretch;
+	justify-content:space-between;
 	font-size: 2rem;
 	margin-top: 1 rem;
 	align-items:center;
@@ -113,7 +113,7 @@
 	font-family: Mulish, sans-serif;
 	font-weight: 500;
     &--activo {
-        background-color: $colorTerciary;
+        background-color: $nav_active;
         color: $colorPrimary;
         border-radius: 3px;
         padding: 3px;

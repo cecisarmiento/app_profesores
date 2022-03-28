@@ -1,14 +1,12 @@
 /* seccion clases */
 .principalClases{
 	background-image:url(../images/landing_clases.svg);
-	height: 100VH; 
+	height:map-get($principalSect, height);
 	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	@include flex-column-cen;
+	padding:map-get($principalSect, 1rem);
 	&__lista {
 		font-size: 200%;
 		font-family: Mulish; 
@@ -24,27 +22,11 @@
 	background-color: #fff !important;
 	color:$colorPrimary !important;
 }
-.subtitle {
-	color: grey;
-	letter-spacing: 0.1rem;
-}
-/* .principalClases1{
-	background-image:url(./images/landing_inicioclases.svg);
-	height: 100VH; 
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-} */
 
 
 .index__img--clases{
 	width: 100%;
 	height: 100%;
-	
 	left: 10%;
 	
 }
@@ -94,9 +76,7 @@
 	top: 10%;
 }
 .h1__default--clase{
-	
 	letter-spacing: 0.15rem;
-	
 	/* text-transform: uppercase; */
 	margin-bottom: 1rem;
 	/* animation: texth2 2s 1 0.5s; */

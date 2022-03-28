@@ -4,10 +4,7 @@
 	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover; 
-	display: flex;
-	flex-direction: column;
-	align-items:stretch;
-	justify-content: center;
+	@include flex-column-cen;
 	padding: 2rem 1rem;
 /* 	max-width: 1200px;*/ 
 	margin: 0 auto;
@@ -17,6 +14,7 @@
 		margin-left: 20px;  
 		& li {
 			font-size: 2rem;
+			list-style-type:decimal;
 		}
 	}
 }
@@ -99,6 +97,7 @@
 }
 
 #button__article{
+	@extend .btn;
 	background-color: $colorSecondary;
 	border-color: $colorTerciary;
 	color: $colorTerciary;

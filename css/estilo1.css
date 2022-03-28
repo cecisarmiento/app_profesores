@@ -32,9 +32,8 @@ main {
   width: 100%; }
 
 .principal__titulos {
-  margin-left: 20px;
-  position: absolute;
-  /* top: 50%; */ }
+  padding: 2rem;
+  position: absolute; }
 
 .h1__default {
   font-size: 400%;
@@ -84,10 +83,10 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover; }
 
 .carousel__inicio {
-  background-color: #2EC1AC;
+  background-color: #D2E603;
   /* position: absolute; */
   top: 50%;
-  min-height: 25vh; }
+  min-height: 16vh; }
 
 .sectionSecond {
   margin: 0 auto;
@@ -179,6 +178,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 8px;
   margin-bottom: 8px; }
 
+.subtitle {
+  color: grey;
+  letter-spacing: 0.1rem; }
+
+.quote--color {
+  color: #fff; }
+
 /* seccion clases */
 .principalClases {
   background-image: url(../images/landing_clases.svg);
@@ -188,8 +194,9 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  padding: 1rem; }
   .principalClases__lista {
     font-size: 200%;
     font-family: Mulish;
@@ -203,21 +210,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff !important;
   color: #2EC1AC !important; }
 
-.subtitle {
-  color: grey;
-  letter-spacing: 0.1rem; }
-
-/* .principalClases1{
-	background-image:url(./images/landing_inicioclases.svg);
-	height: 100VH; 
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-} */
 .index__img--clases {
   width: 100%;
   height: 100%;
@@ -273,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
   /* animation: texth2 2s 1 0.5s; */ }
 
 /* BOTONES */
-.btn {
+.btn, #button__article {
   font-size: 2rem;
   margin: 5px 5px 5px 5px;
   /*top: 1 rem;   */
@@ -289,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   border-color: #2EC1AC; }
-  .btn:hover {
+  .btn:hover, #button__article:hover {
     color: #3E978B !important;
     background-color: #3E978B;
     border-color: #3E978B;
@@ -303,8 +295,8 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   justify-content: center;
+  align-items: center;
   padding: 2rem 1rem;
   /* 	max-width: 1200px;*/
   margin: 0 auto;
@@ -313,7 +305,8 @@ h1, h2, h3, h4, h5, h6 {
   .principalFinanzas__titulos {
     margin-left: 20px; }
     .principalFinanzas__titulos li {
-      font-size: 2rem; }
+      font-size: 2rem;
+      list-style-type: decimal; }
 
 .articulos {
   min-height: 100vh;
@@ -469,11 +462,6 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center; }
   .footer__iconos {
     display: inline-block; }
-    .footer__iconos a {
-      color: #3E978B; }
-
-.iconFooter {
-  font-size: 300%; }
 
 .footerBackground1 {
   background-color: #EFF48E;
@@ -487,6 +475,22 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   margin-top: 0px; }
+
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--twitter {
+  color: #55acee;
+  font-size: 300%;
+  margin-right: 1rem; }
+
+.btn--whatsapp {
+  color: #25D366;
+  font-size: 300%;
+  margin-right: 1rem; }
+
+.btn--instagram {
+  color: #E1306C;
+  font-size: 300%;
+  margin-right: 1rem; }
 
 .header {
   height: 100px;
@@ -516,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__lista {
   display: flex;
-  justify-content: stretch;
+  justify-content: space-between;
   font-size: 2rem;
   margin-top: 1 rem;
   align-items: center;
@@ -584,7 +588,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Mulish, sans-serif;
   font-weight: 500; }
   .nav__enlace--activo {
-    background-color: #D2E603;
+    background-color: #d3e60385;
     color: #2EC1AC;
     border-radius: 3px;
     padding: 3px;
@@ -613,7 +617,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  align-items: flex-start; }
 
 .NosotrosForm {
   min-height: 70VH;

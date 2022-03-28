@@ -32,12 +32,10 @@ main {
 	width: 100%;
 }
 .principal__titulos{ 
-	margin-left: 20px;
+	padding: map-get($titles, padding );
 	position: absolute;
-	/* top: 50%; */
-	
-	
 }
+
 .h1__default{ 
 	font-size: 400%;  /*modifica tamaño tipografico */
 	font-weight:700; 
@@ -88,10 +86,10 @@ h1, h2, h3, h4, h5, h6 {
 	object-fit: cover;
 }
 .carousel__inicio{
-	background-color: $colorPrimary;
+	background-color: $colorTerciary;
 	/* position: absolute; */
 	top:50%;
-	min-height: 25vh;
+	min-height: 16vh;
 }
 .sectionSecond { 
 	margin: 0 auto;
@@ -191,4 +189,11 @@ font-size: 2rem;
    margin-top: 8px;
    margin-bottom: 8px;
 
+}
+.subtitle {
+	color: grey;
+	letter-spacing: 0.1rem;
+}
+.quote--color{
+	color: #fff;
 }
