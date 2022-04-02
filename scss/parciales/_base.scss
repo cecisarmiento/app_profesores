@@ -36,7 +36,7 @@ main {
 	position: absolute;
 }
 
-.h1__default{ 
+.h1--animated{ 
 	font-size: 400%;  /*modifica tamaño tipografico */
 	font-weight:700; 
 	letter-spacing: 0.2rem;
@@ -89,7 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: $colorTerciary;
 	/* position: absolute; */
 	top:50%;
-	min-height: 20vh;
+	
+
 }
 .sectionSecond { 
 	margin: 0 auto;
